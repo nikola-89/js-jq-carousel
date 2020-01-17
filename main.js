@@ -17,7 +17,6 @@ function sliderNext() {
     var circleActive = $('i.active');
     var imageNext = imageActive.next();
     var circleNext = circleActive.next();
-
     if (imageActive.hasClass('last')) {
         imageActive.removeClass('active');
         circleActive.removeClass('active');
@@ -28,15 +27,14 @@ function sliderNext() {
         circleActive.removeClass('active');
         imageNext.addClass('active');
         circleNext.addClass('active');
-    }
-}
+    };
+};
 
 function sliderPrev() {
     var imageActive = $('img.active');
     var circleActive = $('i.active');
-    var imageNext = imageActive.prev();
-    var circleNext = circleActive.prev();
-
+    var imagePrev = imageActive.prev();
+    var circlePrev = circleActive.prev();
     if (imageActive.hasClass('first')) {
         imageActive.removeClass('active');
         circleActive.removeClass('active');
@@ -45,8 +43,8 @@ function sliderPrev() {
     } else {
         imageActive.removeClass('active');
         circleActive.removeClass('active');
-        imageNext.addClass('active');
-        circleNext.addClass('active');
-    }
-}
+        imagePrev.addClass('active');
+        circlePrev.addClass('active');
+    };
+};
 // ***************************
