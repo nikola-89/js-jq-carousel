@@ -3,17 +3,17 @@ $(document).ready(function() {
     $('.next').click(
         function() {
             sliderNext();
-        });
+    });
 
     $('.prev').click(
         function() {
             sliderPrev();
-        });
+    });
 
     $('.nav i').click(
-            function() {
-                sliderCircleManually(this);
-            });
+        function() {
+            sliderCircleManually(this);
+    });
 
     $(document).keydown(function() {
         switch (event.which) {
