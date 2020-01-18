@@ -12,7 +12,7 @@ $(document).ready(function() {
 
     $('.nav i').click(
         function() {
-            sliderCircleManually(this);
+            sliderCirclebyClick(this);
     });
 
     $(document).keydown(function() {
@@ -61,7 +61,7 @@ function sliderPrev() {
     };
 };
 
-function sliderCircleManually(thisCircle) {
+function sliderCirclebyClick(thisCircle) {
     $('img.active').removeClass('active');
     $('i.active').removeClass('active');
     $('.images img').eq($(thisCircle).index()).addClass('active');
